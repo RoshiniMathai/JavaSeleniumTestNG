@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-01-23T17:45:10 EST" name="Test Suite" finished-at="2025-01-23T17:45:16 EST" duration-ms="5416">
+    <groups>
+    </groups>
+    <test started-at="2025-01-23T17:45:10 EST" name="Login Tests" finished-at="2025-01-23T17:45:16 EST" duration-ms="5416">
+      <class name="com.guru99.tests.LoginTests">
+        <test-method is-config="true" signature="preSetup()[pri:0, instance:com.guru99.tests.LoginTests@45d84a20]" started-at="2025-01-23T17:45:10 EST" name="preSetup" finished-at="2025-01-23T17:45:10 EST" duration-ms="126" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preSetup -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.guru99.tests.LoginTests@45d84a20]" started-at="2025-01-23T17:45:10 EST" name="setup" finished-at="2025-01-23T17:45:15 EST" duration-ms="4138" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyUserLoginWithValidCredentials(java.lang.String,java.lang.String)[pri:0, instance:com.guru99.tests.LoginTests@45d84a20]" started-at="2025-01-23T17:45:15 EST" name="verifyUserLoginWithValidCredentials" finished-at="2025-01-23T17:45:16 EST" duration-ms="1003" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mngr608467]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[gepesys]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [GTPL Bank Manager HomePage] but found [GTPL Baank Manager HomePage]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [GTPL Bank Manager HomePage] but found [GTPL Baank Manager HomePage]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at com.guru99.tests.LoginTests.verifyUserLoginWithValidCredentials(LoginTests.java:20)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserLoginWithValidCredentials -->
+        <test-method is-config="true" signature="postTestAction(org.testng.ITestResult)[pri:0, instance:com.guru99.tests.LoginTests@45d84a20]" started-at="2025-01-23T17:45:16 EST" name="postTestAction" finished-at="2025-01-23T17:45:16 EST" duration-ms="120" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUserLoginWithValidCredentials status=FAILURE method=LoginTests.verifyUserLoginWithValidCredentials(java.lang.String,java.lang.String)[pri:0, instance:com.guru99.tests.LoginTests@45d84a20] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postTestAction -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.guru99.tests.LoginTests@45d84a20]" started-at="2025-01-23T17:45:16 EST" name="tearDown" finished-at="2025-01-23T17:45:16 EST" duration-ms="119" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="postTearDown()[pri:0, instance:com.guru99.tests.LoginTests@45d84a20]" started-at="2025-01-23T17:45:16 EST" name="postTearDown" finished-at="2025-01-23T17:45:16 EST" duration-ms="189" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postTearDown -->
+      </class> <!-- com.guru99.tests.LoginTests -->
+    </test> <!-- Login Tests -->
+  </suite> <!-- Test Suite -->
+</testng-results>
